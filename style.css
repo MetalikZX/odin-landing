@@ -19,7 +19,7 @@ ul {
     list-style: none;
 }
 
-.header, .hero {
+.header, .hero, .footer {
   background-color: #1f2937;
 }
 
@@ -37,13 +37,14 @@ a {
   text-decoration: none;
 }
 
-button {
+.upperbutton {
   background-color: #3882F6;
   border-radius: 12px;
   color: white;
   font-size: 18px;
   padding: 6px 12px;
   margin-top: 30px;
+  border-style: solid;
 }
 
 .herodesc {
@@ -77,27 +78,29 @@ gap: 150px;
 }
 
 .img-placeholder {
-  flex: 0 0 150px;
+  flex: 0 0 160px;
   height: 70px;
   display: flex;
   align-items: center;
   background-color: #6d747d;
   padding: 70px 150px;
+  white-space: nowrap;
 }
 
 .info {
   display: flex;
   justify-content: center;
- 
   padding-top: 50px;
 }
 
 .infotext {
   display: flex;
+  max-width: 150px;
 }
 
 .infoblock {
-  max-width: 200px;
+  max-width: 150px;
+  margin: 25px;
 }
 
 .info-pic {
@@ -105,8 +108,8 @@ gap: 150px;
   height: 150px;
   border: #3882F6 3px;
   border-style: solid;
-  border-radius: 25px;
-  margin-bottom: 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .infotitle {
@@ -116,4 +119,75 @@ gap: 150px;
   font-size: 36px;
   color: #1f2937;
   font-weight: 900;
+}
+
+.quote {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 200;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+.quotepart {
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 100px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.attr {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 500px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.CTA-Section {
+  background-color: #3882F6;
+  max-width: 550px;
+  display: flex;
+  margin: 100px auto;
+  padding: 35px 70px;
+  justify-content: space-between;
+  border-radius: 5px;
+
+}
+
+.CTA-Title, .CTA-Desc, .bottombutton {
+  color: #f9faf8;
+}
+
+.bottombutton {
+  background-color: #3882F6;
+  border-color: #e5e7eb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 5px 15px;
+}
+
+.CTA-Title {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.CTA-Desc {
+  font-size: 13px;
+}
+
+.footer {
+color: #a7aaad;
+display: flex;
+justify-content: center;
+padding: 20px;
 }
